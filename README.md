@@ -2,8 +2,23 @@
 
 ![alt text](./AuroSholar.png "AuroScholar Logo")
 
+### React Native SetUp in class in APP.JS
 
-![EXAMPLE1](https://user-images.githubusercontent.com/71823266/135056961-57100938-379d-45d8-ae4b-db0dd5b3d21b.PNG)
+Step 1 : Add this code in your App.js class
+----
+
+![EXAMPLE1](https://user-images.githubusercontent.com/71823266/135057636-68121df9-c817-4777-ad0f-e3d63434c584.PNG)
+
+
+```swift
+ componentDidMount(){
+	var LoadingOverlay = NativeModules.LoadingOverlay;
+	//Let's show it
+	LoadingOverlay.auroscholarSdk();
+	// And let's hide it after 3 seconds
+	
+  }
+```
 
 ### Requirements
 - JDK 8
