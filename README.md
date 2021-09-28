@@ -2,6 +2,9 @@
 
 ![alt text](./AuroSholar.png "AuroScholar Logo")
 
+
+![EXAMPLE1](https://user-images.githubusercontent.com/71823266/135056961-57100938-379d-45d8-ae4b-db0dd5b3d21b.PNG)
+
 ### Requirements
 - JDK 8
 - Latest Android SDK tools
