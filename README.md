@@ -2,6 +2,9 @@
 
 ![alt text](./AuroSholar.png "AuroScholar Logo")
 
+### Auro Scholar SDK for React Native  Implementation Steps
+
+
 ### React Native SetUp in class in APP.JS
 
 Step 1 : Add this code in your App.js class
@@ -20,7 +23,7 @@ Step 1 : Add this code in your App.js class
   }
 ```
 
-### Requirements
+### Requirements for Android 
 - JDK 8
 - Latest Android SDK tools
 - Latest Android platform tools
@@ -30,10 +33,6 @@ Step 1 : Add this code in your App.js class
 ### Configure
 - ./keystore.properties
 - Firebase - google-services.json
-
-
-### Auro Scholar SDK Implementation Steps
-
 Step 1 : Add the dependency in your app/build.gradle(:app)
 ----
 
@@ -94,6 +93,15 @@ Step 4 : Add google gms service dependency in your build.gradle(Application).
 }
 
 ```
+
+
+Step 5 : In MainApplication add one line of code
+----
+```swift
+
+   packages.add(new LoadingOverlayPackager());
+```
+
 
 
 Step 5 : For open ,AuroScholar Activity or Start the Auro Scholar sdk
