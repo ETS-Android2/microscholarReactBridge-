@@ -107,6 +107,16 @@ Step 5 : In MainApplication add one line of code
 ```
 
 
+Step 5 : In LoadingOverlayPackager add one line of code
+----
+
+![example3](https://user-images.githubusercontent.com/71823266/135061082-3c3efbae-268b-4fcc-9fc2-9394c25b69a8.PNG)
+
+```swift
+  
+  modules.add(new LoadingOverlay(reactContext));
+
+```
 
 Step 7 : For open ,AuroScholar Activity or Start the Auro Scholar sdk
 ----
@@ -132,21 +142,6 @@ inputModel.setPartnerName("");//Mandatory
 AuroScholar.startAuroSDK(inputModel);
 
 
-
-```
-Step 6 : Add these lines in activity in onActivityResult( ) Method.
-----
-
-```swift
-
-@Override
-protected void onActivityResult(int requestCode, int resultCode, @Nullable Intent data) {
- super.onActivityResult(requestCode, resultCode, data);
- //must param to get the acitivity
- for (Fragment fragment : getSupportFragmentManager().getFragments()) {
- fragment.onActivityResult(requestCode, resultCode, data);
- }
-}
 
 ```
 
