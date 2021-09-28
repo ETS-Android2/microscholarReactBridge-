@@ -64,13 +64,11 @@ Step 3 : Add the JitPack repository in your root build.gradle at the end of repo
 ----
 
 ```swift
-
 allprojects {
 		repositories {
 			maven { url 'https://jitpack.io' }
 		}
 	}
-
 ```
 
 
@@ -78,7 +76,6 @@ Step 4 : Add google gms service dependency in your build.gradle(Application).
 ----
 
 ```swift
-
  repositories {
  maven { url 'https://jitpack.io' }
  google()
@@ -102,24 +99,25 @@ Step 5 : In MainApplication add one line of code
 
 
 ```swift
-
    packages.add(new LoadingOverlayPackager());
 ```
 
 
-Step 5 : In LoadingOverlayPackager add one line of code
+Step 6 : In LoadingOverlayPackager add one line of code
 ----
 
 ![example3](https://user-images.githubusercontent.com/71823266/135061082-3c3efbae-268b-4fcc-9fc2-9394c25b69a8.PNG)
 
-```swift
-  
+```swift 
   modules.add(new LoadingOverlay(reactContext));
-
 ```
 
 Step 7 : For open ,AuroScholar Activity or Start the Auro Scholar sdk
 ----
+
+![example 4](https://user-images.githubusercontent.com/71823266/135062849-c0fc35f2-15f0-45df-aea9-be9bb8ceb82e.PNG)
+
+
 ```swift
 
 AuroScholarInputModel inputModel= new AuroScholarInputModel();
@@ -140,8 +138,6 @@ inputModel.setPartnerName("");//Mandatory
 //optional Filed
 //This method start the SDK
 AuroScholar.startAuroSDK(inputModel);
-
-
 
 ```
 
